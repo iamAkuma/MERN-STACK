@@ -11,6 +11,8 @@ const getGoals = asyncHandler(async (req, res) => {
     res.status(200).json(goals)
 
 })
+
+
 //@desc Set goals
 //@route POST /api/goals
 //@access Private after we add authentication
@@ -26,6 +28,8 @@ const setGoals = asyncHandler(async (req, res) => {
     })
     res.status(200).json(goal)
 })
+
+
 //@desc Update goals
 //@route PUT /api/goals/:id
 //@access Private after we add authentication
@@ -39,6 +43,8 @@ const updateGoals = asyncHandler(async (req, res) => {
     res.status(200).json(updatedGoal)
 
 })
+
+
 //@desc Delete goals
 //@route DELETE /api/goals/:id
 //@access Private after we add authentication
